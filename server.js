@@ -37,10 +37,10 @@ function filterByQuery(query, animalArray) {
     return filteredResults;
 }
 
-// function findById(id, animalsArray) {
-//     const result = animalsArray.filter(animal => aniamal.id === id)[0];
-//     return result; 
-// }
+function findById(id, animalsArray) {
+    const result = animalsArray.filter(animal => aniamal.id === id)[0];
+    return result; 
+}
 
 app.get('/api/animals/:id', (req, res) => {
     const result = findById(req.params.id, animals);
