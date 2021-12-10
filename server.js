@@ -39,7 +39,7 @@ function filterByQuery(query, animalArray) {
 
 function findById(id, animalsArray) {
     const result = animalsArray.filter(animal => aniamal.id === id)[0];
-    return result; 
+    return result;
 }
 
 app.get('/api/animals/:id', (req, res) => {
@@ -55,4 +55,4 @@ app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
 });
 
-app.post('/api/animals', (req,res) => {});
+app.post('/api/animals', (req, res) => { });
